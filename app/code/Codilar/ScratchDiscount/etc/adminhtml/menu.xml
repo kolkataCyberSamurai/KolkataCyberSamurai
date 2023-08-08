@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Codilar_ScratchDiscount::parent" title="ScratchDiscount" module="Codilar_ScratchDiscount" sortOrder="100" resource="Codilar_ScratchDiscount::parent"/>
+		<add id="Codilar_ScratchDiscount::scratchdata" title="ScratchDiscount Scratchdata" module="Codilar_ScratchDiscount" sortOrder="20" parent="Codilar_ScratchDiscount::parent" action="scratchdiscount/scratchdata" resource="Codilar_ScratchDiscount::scratchdata"/>
+
+    </menu>
+</config>

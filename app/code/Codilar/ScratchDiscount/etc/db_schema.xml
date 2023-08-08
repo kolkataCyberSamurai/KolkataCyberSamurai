@@ -1,0 +1,13 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="custom_product_question">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" comment="Id" identity="true"/>
+        <column xsi:type="int" name="product_id" padding="10" unsigned="true" nullable="false" comment="Product ID"/>
+        <column xsi:type="varchar" name="question" nullable="false" length="255" comment="Question"/>
+        <column xsi:type="varchar" name="all_answer" nullable="false" length="255" comment="All answer"/>
+        <column xsi:type="varchar" name="correct_answer" nullable="false" comment="Correct Answer"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+   </table>
+</schema>
